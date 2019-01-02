@@ -68,7 +68,7 @@ func main() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/about", aboutHandler)
 	http.HandleFunc("/bl", blacklistHandler)
-	http.HandleFunc("/logs/raw", blacklistHandler)
+	http.HandleFunc("/logs/raw", logsRawHandler)
 	http.ListenAndServe(":9923", nil)
 
 }
